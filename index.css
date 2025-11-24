@@ -1,0 +1,53 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 40vw;
+  padding: 15px;
+  background-color: aliceblue;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 5px 5px 15px black;
+  transition: all ease 300ms;
+}
+.btns:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px black;
+
+  transition: all ease 300ms;
+}
+
+
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .card {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card {
+    width: 90vw;
+    flex-direction: column;
+  }
+}
+
+
+
+
+p {
+    font-family: "roboto", sans-serif;
+    font-weight: 400; /* regular */
+}
